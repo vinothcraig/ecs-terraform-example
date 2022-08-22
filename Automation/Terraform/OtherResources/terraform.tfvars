@@ -1,0 +1,30 @@
+## Variables that intend to change for each env
+aws_profile             = "aws_api"
+region_name             = "us-east-1"
+az1_name                = "us-east-1a"
+az2_name                = "us-east-1b"              
+vpc_01_name             = "API-VPC-01"
+vpc_01_cidr             = "10.0.0.0/16"
+igw_01_name             = "igw-api-01-or-01"
+pub_sub_01_cidr         = "10.0.31.0/24"
+pub_sub_01_name         = "pub-api-01-or-01"
+pub_sub_02_cidr         = "10.0.35.0/24"
+pub_sub_02_name         = "pub-api-01-or-02"
+pub_rt_01_name          = "pub-rt-api-01-or-01"
+sg_01_name              = "Common-SG-api-01-or-01"
+ecs_cluster_name        = "api-cluster"
+ecs_service_name        = "api-service"
+ecs_memory              = "512"
+ecs_cpu                 = "256"
+container_port          = "8000" 
+container_name          = "api-task"
+alb_name                = "api-alb"
+alb_tg_name             = "api-alb-tg"
+cert_arn                = "<cern_arn>"
+hosted_zone_id          = "<zone_id>"
+host_name               = "api" 
+
+
+## Variables that remain common and the modification is subjective
+infra_cidr_01           = "0.0.0.0/0"
+
